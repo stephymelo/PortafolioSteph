@@ -1,0 +1,37 @@
+@import './Styles/reset';
+@import './Styles/breakpoint';
+@import './Styles/colors';
+@import './Styles/types';
+@import './Styles/elements';
+@import './Components/Work/work';
+@import './Components/Banner/banner';
+@import './Components/Contact/contact';
+@import './Components/Header/header';
+@import './Components/Header/Links/links';
+@import './Components/About/about';
+
+
+
+@font-face{
+    font-family: GothamMedium,sans-serif;
+    src:  url('/src/Resources/Fonts/GothamMedium.ttf');
+}
+@font-face{
+    font-family: GothamLight,sans-serif;
+    src:  url('/src/Resources/Fonts/GothamLight.ttf');
+}
+
+@font-face{
+    font-family: GothamBold,sans-serif;
+    src:  url('/src/Resources/Fonts/GothamBold.ttf');
+}
+#app {
+    font-family: Gotham,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+    
+  }
+  
