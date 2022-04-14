@@ -1,0 +1,19 @@
+.header{
+    position: absolute;
+    z-index: 1;
+
+    right:2em;
+    top:2em;
+    .menu{
+        width:2em;
+        &__line{
+            margin-right:0.2em;
+        }
+        &__line2{
+            margin-left:0.2em;
+
+        }
+    }
+  
+
+}
