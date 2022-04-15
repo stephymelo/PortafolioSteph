@@ -1,7 +1,48 @@
 .workElem{
+    width:50%;
+    align-items: center;
+    margin-top:3em;
+    :hover{
+        transition: all 0.6s ease-in-out;
+        filter: drop-shadow(0px 0px 2px $principal);
+    }
+    
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+
+    }
   
-    .workImage{
-        width:30%;
+    &__tag{
+        padding-top:0.8em;
+        padding-bottom:0.8em;
+        padding-left:2em;
+        padding-right:2em;
+        background-color: rgba($color: #c4cdff, $alpha: 0.5);
+        margin-right:1em;
+        border-radius:2em;
+        font-size:10px;
+        color:black;
+       
+    }
+
+    &__title{
+        margin-top:1.2em;
+    }
+
+    &__description{
+        font-size: 14px;
+        width:50%;
+        margin-top:1.4em;
+    }
+    &__image{
+        width:60%;
+        height:60%;
+        margin-top:1em;
         border-radius: 11px;
+
+       
     }
 }

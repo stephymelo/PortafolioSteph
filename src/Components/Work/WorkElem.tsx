@@ -7,19 +7,20 @@ export type WorkElemProps = WorkElemObj & {
 
 }
 
-const WorkElem: React.FC<WorkElemProps> = ({id,title,tags,tags2,description,image,link}) => {
+const WorkElem: React.FC<WorkElemProps> = ({ id, title, tags, tags2, description, image, link }) => {
   return (
     <section className='workElem'>
-      <ol>
-        <li>{tags}</li>
-        <li>{tags2}</li>
+      <ol className='workElem__list'>
+        <li className='workElem__tag'>{tags}</li>
+        <li className='workElem__tag'>{tags2}</li>
       </ol>
-      <h2>{title}</h2>
+      <h2 className='workElem__title'>{title}</h2>
       <a href={link} target="_blank">
-      <img className='workImage' src={image}></img>
+        <img className='workElem__image' src={image}></img>
+        
       </a>
-      <p>{description}</p>
-   
+      <p className='workElem__description'>{description}</p>
+
     </section>
   );
 }

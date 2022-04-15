@@ -9,11 +9,15 @@
     background: linear-gradient(180deg, #1c2742 0%, #141241 105.68%, rgba(53, 49, 152, 0) 105.69%, #07090f 105.69%);
     display: flex;
     position: relative;
+    
    
     &__article{
+       
         width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left:10em;
+        margin-top:5em;
     }
 }
