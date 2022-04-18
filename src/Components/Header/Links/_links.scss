@@ -1,5 +1,10 @@
-.links{
-    .link{
+.linksmenu{
+    // display: flex;
+    // flex-direction: row;
+    text-align: right;
+
+    &__link{
+        margin-top:0.4em;
         cursor: pointer;
     }
 }

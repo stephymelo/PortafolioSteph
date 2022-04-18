@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { WorkElemObj } from '../../Types/WorkElemObj';
-import WorkElem from './WorkElem';
+import WorkElem from './WorkElem/WorkElem';
 import flowerBehance from './../../Resources/Images/flowerBehance.png';
 import hulubehance from './../../Resources/Images/hulubehance.png';
 import gameitbehance from './../../Resources/Images/gameit.png';

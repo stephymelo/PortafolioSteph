@@ -7,9 +7,9 @@ interface Links {
 
 export const Links: React.FC<Links> = () => {
     return (
-        <section className='links'>
-            <ul>
-                <li>
+        <section className='linksmenu'>
+            <ul className='linksmenu'>
+                <li className='linksmenu__link'>
                     <Link to="banner"
                         spy={true}
                         smooth={true}
@@ -17,7 +17,7 @@ export const Links: React.FC<Links> = () => {
                         className='link'
                         activeClass='some-active-class'><span>Home</span></Link>
                 </li>
-                <li>
+                <li className='linksmenu__link'>
                     <Link to="about"
                         spy={true}
                         smooth={true}
@@ -25,7 +25,7 @@ export const Links: React.FC<Links> = () => {
                         className='link'
                         activeClass='some-active-class'><span>About</span></Link>
                 </li>
-                <li>
+                <li className='linksmenu__link'>
                     <Link to="work"
                         spy={true}
                         smooth={true}
@@ -33,7 +33,7 @@ export const Links: React.FC<Links> = () => {
                         className='link'
                         activeClass='some-active-class'><span>Work</span></Link>
                 </li>
-                <li>
+                <li className='linksmenu__link'>
                     <Link to="contact"
                         spy={true}
                         smooth={true}

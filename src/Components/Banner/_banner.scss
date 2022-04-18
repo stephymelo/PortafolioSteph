@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../../Resources/Images/grain.png");
-    background: linear-gradient(180deg, #1c2742 0%, #141241 105.68%, rgba(53, 49, 152, 0) 105.69%, #07090f 105.69%);
+    background: linear-gradient(210.58deg, #091022 19.98%, #111d3d 56.3%, #091022 87.94%);
     display: flex;
     position: relative;
     overflow: hidden;
@@ -16,42 +16,40 @@
         width: 100%;
         height: 100%;
         opacity: 0.5;
+        // animation: grain 8s steps(10) infinite;
     }
 
     &__article {
         display: flex;
 
         &--1 {
-            .blobsbg {
-                mix-blend-mode: overlay;
-                animation: float 10s ease-in-out infinite alternate;
+            
+            .circle {
+                top:10em;
+                left:10em;
+                position: absolute;
             }
-            .bloblist {
-                mix-blend-mode: hard-light;
-                z-index: 1;
+            .elipse {
+                position: absolute;
+                top: 8em;
+                
 
-                .blob {
-                    position: absolute;
+                &--1 {
+                    left: 6em;
+                    mix-blend-mode: hard-light;
+                    width: 90%;
+                }
 
-                    &--1 {
-                        top: 30em;
-                        left: 10em;
-                    }
-                    &--2 {
-                        top: 15em;
-                        left: 10em;
-                    }
-                    &--3 {
-                        top: 20em;
-                        left: 20em;
-                    }
-                    &--4 {
-                        top: 15em;
-                        left: 15em;
-                    }
+                &--2 {
+                    left: 22em;
+                }
+
+                &--3 {
+                    left: 8em;
                 }
             }
         }
+
         &--2 {
             position: relative;
             width: 80%;
@@ -61,58 +59,13 @@
                 z-index: 2;
 
                 margin-top: 23em;
-                margin-left: 12em;
+                margin-left: 42em;
                 .title {
                     text-shadow: 0px 0px 10px rgba(188, 205, 245, 0.459);
                 }
                 .subtitle {
                     margin-top: 1.3em;
                 }
-                .links {
-                    margin-top: 5em;
-                    display: flex;
-                    vertical-align: bottom;
-                    &__li {
-                        margin-right: 1.5em;
-                        text-shadow: 0px 0px 5px rgba(188, 205, 245, 0);
-                        transition-delay: calc((var(--n) - 1) * 0.1s);
-
-                        :hover {
-                            transition: all 0.2s ease-in-out;
-                            mix-blend-mode: hard-light;
-                            // text-shadow: 0px 0px 5px rgb(188, 205, 245);
-                            filter: drop-shadow(0px 0px 2px);
-                        }
-                        &::after {
-                            transition: all 0.2s ease-in-out;
-                            text-shadow: 0px 0px 5px rgba(188, 205, 245, 0);
-                        }
-
-                        .icon {
-                            vertical-align: middle;
-                            margin-right: 1.5em;
-                        }
-                        .link {
-                        }
-                    }
-                }
-            }
-
-            .circle {
-                top: 10em;
-                mix-blend-mode: hard-light;
-                z-index: 1;
-                position: absolute;
-                // animation: spin 60s infinite;
-            }
-            .circleblur {
-                top: 10em;
-                position: absolute;
-                mix-blend-mode: hard-light;
-                z-index: 1;
-                filter: blur(60px);
-                opacity: 0.5;
-                display: display;
             }
         }
     }
@@ -173,5 +126,39 @@
     }
     100% {
         border-radius: 66% 34% 33% 67% / 65% 73% 27% 35%;
+    }
+}
+
+@keyframes grain {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-5%, -10%);
+    }
+    20% {
+        transform: translate(-15%, 5%);
+    }
+    30% {
+        transform: translate(7%, -25%);
+    }
+    40% {
+        transform: translate(-5%, 25%);
+    }
+    50% {
+        transform: translate(-15%, 10%);
+    }
+    60% {
+        transform: translate(15%, 0%);
+    }
+    70% {
+        transform: translate(0%, 15%);
+    }
+    80% {
+        transform: translate(3%, 35%);
+    }
+    90% {
+        transform: translate(-10%, 10%);
     }
 }

@@ -1,0 +1,28 @@
+.links {
+    margin-top: 5em;
+    display: flex;
+    vertical-align: bottom;
+    &__li {
+        margin-right: 1.5em;
+        text-shadow: 0px 0px 5px rgba(188, 205, 245, 0);
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+
+        :hover {
+            transition: all 0.2s ease-in-out;
+            mix-blend-mode: hard-light;
+            // text-shadow: 0px 0px 5px rgb(188, 205, 245);
+            filter: drop-shadow(0px 0px 2px);
+        }
+        &::after {
+            transition: all 0.2s ease-in-out;
+            text-shadow: 0px 0px 5px rgba(188, 205, 245, 0);
+        }
+
+        .icon {
+            vertical-align: middle;
+            margin-right: 1.5em;
+        }
+        .link {
+        }
+    }
+}

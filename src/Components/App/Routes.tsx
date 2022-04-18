@@ -27,15 +27,10 @@ export const Routers: React.FC<Routes> = () => {
 
   return (
     <section className='routes'>
-
       <Header />
-
       <Banner />
-
-      <Work />
-
       <About />
-
+      <Work />
       <Contact />
       <HashRouter>
         <Routes>

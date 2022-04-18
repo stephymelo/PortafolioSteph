@@ -1,19 +1,34 @@
-.header{
+.header {
     position: fixed;
     z-index: 1;
+    display: flex;
+    flex-direction: row;
+    left: 2em;
+    top: 2em;
 
-    right:2em;
-    top:2em;
-    .menu{
-        width:2em;
-        &__line{
-            margin-right:0.2em;
-        }
-        &__line2{
-            margin-left:0.2em;
-
+    &__article--1 {
+        position: relative;
+        width:50%;
+        .logo {
+            width: 15%;
+            height:100%;
         }
     }
-  
 
+    &__article--2 {
+        position: relative;
+        width:50%;
+        margin-left:58em;
+      
+        
+    }
+    .menu {
+        width: 2em;
+        &__line {
+            margin-right: 0.2em;
+        }
+        &__line2 {
+            margin-left: 0.2em;
+        }
+    }
 }
