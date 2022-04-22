@@ -2,11 +2,36 @@
     width: 100%;
     min-height: 100vh;
     max-height: 100%;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background: linear-gradient(180deg, #050A18 3.3%, #20315E 105.69%);
+    background: linear-gradient(139.54deg, #091022 17.04%, #111d3d 48.16%);
     display: flex;
     position: relative;
     overflow: hidden;
+
+    &__article {
+        margin-left: 2em;
+        margin-top: 5em;
+        display: flex;
+        &--1 {
+            width:50%;
+            
+            .imageselfie{
+               
+
+            }
+
+        }
+
+        &--2 {
+            margin-left: 1em;
+            width: 50%;
+            .paragraph {
+                margin-top:2em;
+                margin-bottom:2em;
+                width:70%;
+               
+            }
+        }
+    }
 }

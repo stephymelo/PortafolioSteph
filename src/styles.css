@@ -83,6 +83,7 @@ p, li {
   color: #9fb2dd;
   font-weight: 200;
   font-family: "Gotham", sans-serif;
+  letter-spacing: 0.1em;
 }
 
 h4 {
@@ -188,7 +189,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../../Resources/Images/grain.png");
-  background: linear-gradient(234.27deg, #080F1F 30.59%, #1B3886 92.57%);
+  background: linear-gradient(111.13deg, #091022 -16.05%, #111D3D 28.09%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,7 +268,7 @@ button {
 
 .banner {
   width: 100%;
-  min-height: 100vh;
+  min-height: 110vh;
   max-height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -286,6 +287,12 @@ button {
   width: 100%;
   height: 100%;
   opacity: 0.5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../Resources/Images/grain.png");
+  -webkit-animation: grain 8s steps(10) infinite;
+          animation: grain 8s steps(10) infinite;
 }
 
 .banner__article {
@@ -295,27 +302,30 @@ button {
 }
 
 .banner__article--1 .circle {
-  top: 10em;
+  top: 5em;
   left: 10em;
+  width: 30%;
   position: absolute;
 }
 
 .banner__article--1 .elipse {
   position: absolute;
-  top: 8em;
+  top: 0em;
 }
 
 .banner__article--1 .elipse--1 {
-  left: 6em;
+  left: 1em;
   mix-blend-mode: hard-light;
-  width: 90%;
+  width: 98%;
 }
 
 .banner__article--1 .elipse--2 {
+  top: 8em;
   left: 22em;
 }
 
 .banner__article--1 .elipse--3 {
+  top: 8em;
   left: 8em;
 }
 
@@ -464,90 +474,96 @@ button {
 }
 
 @-webkit-keyframes grain {
-  0%,
-  100% {
+  0% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
   10% {
-    -webkit-transform: translate(-5%, -10%);
-            transform: translate(-5%, -10%);
+    -webkit-transform: translate(-5%, -5%);
+            transform: translate(-5%, -5%);
   }
   20% {
-    -webkit-transform: translate(-15%, 5%);
-            transform: translate(-15%, 5%);
+    -webkit-transform: translate(-10%, 5%);
+            transform: translate(-10%, 5%);
   }
   30% {
-    -webkit-transform: translate(7%, -25%);
-            transform: translate(7%, -25%);
+    -webkit-transform: translate(5%, -10%);
+            transform: translate(5%, -10%);
   }
   40% {
-    -webkit-transform: translate(-5%, 25%);
-            transform: translate(-5%, 25%);
+    -webkit-transform: translate(-5%, 15%);
+            transform: translate(-5%, 15%);
   }
   50% {
-    -webkit-transform: translate(-15%, 10%);
-            transform: translate(-15%, 10%);
+    -webkit-transform: translate(-10%, 5%);
+            transform: translate(-10%, 5%);
   }
   60% {
-    -webkit-transform: translate(15%, 0%);
-            transform: translate(15%, 0%);
+    -webkit-transform: translate(15%, 0);
+            transform: translate(15%, 0);
   }
   70% {
-    -webkit-transform: translate(0%, 15%);
-            transform: translate(0%, 15%);
+    -webkit-transform: translate(0, 10%);
+            transform: translate(0, 10%);
   }
   80% {
-    -webkit-transform: translate(3%, 35%);
-            transform: translate(3%, 35%);
+    -webkit-transform: translate(-15%, 0);
+            transform: translate(-15%, 0);
   }
   90% {
-    -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
+    -webkit-transform: translate(10%, 5%);
+            transform: translate(10%, 5%);
+  }
+  100% {
+    -webkit-transform: translate(5%, 0);
+            transform: translate(5%, 0);
   }
 }
 
 @keyframes grain {
-  0%,
-  100% {
+  0% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
   10% {
-    -webkit-transform: translate(-5%, -10%);
-            transform: translate(-5%, -10%);
+    -webkit-transform: translate(-5%, -5%);
+            transform: translate(-5%, -5%);
   }
   20% {
-    -webkit-transform: translate(-15%, 5%);
-            transform: translate(-15%, 5%);
+    -webkit-transform: translate(-10%, 5%);
+            transform: translate(-10%, 5%);
   }
   30% {
-    -webkit-transform: translate(7%, -25%);
-            transform: translate(7%, -25%);
+    -webkit-transform: translate(5%, -10%);
+            transform: translate(5%, -10%);
   }
   40% {
-    -webkit-transform: translate(-5%, 25%);
-            transform: translate(-5%, 25%);
+    -webkit-transform: translate(-5%, 15%);
+            transform: translate(-5%, 15%);
   }
   50% {
-    -webkit-transform: translate(-15%, 10%);
-            transform: translate(-15%, 10%);
+    -webkit-transform: translate(-10%, 5%);
+            transform: translate(-10%, 5%);
   }
   60% {
-    -webkit-transform: translate(15%, 0%);
-            transform: translate(15%, 0%);
+    -webkit-transform: translate(15%, 0);
+            transform: translate(15%, 0);
   }
   70% {
-    -webkit-transform: translate(0%, 15%);
-            transform: translate(0%, 15%);
+    -webkit-transform: translate(0, 10%);
+            transform: translate(0, 10%);
   }
   80% {
-    -webkit-transform: translate(3%, 35%);
-            transform: translate(3%, 35%);
+    -webkit-transform: translate(-15%, 0);
+            transform: translate(-15%, 0);
   }
   90% {
-    -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
+    -webkit-transform: translate(10%, 5%);
+            transform: translate(10%, 5%);
+  }
+  100% {
+    -webkit-transform: translate(5%, 0);
+            transform: translate(5%, 0);
   }
 }
 
@@ -588,9 +604,22 @@ button {
 }
 
 .contactForm__form--1 {
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contactForm__form--1 .input {
+  margin-right: 2em;
+}
+
+.contactForm__form--2 {
+  margin-top: 2em;
+}
+
+.contactForm__form--2 .contactformBtn {
+  margin-top: 2em;
 }
 
 .header {
@@ -682,16 +711,37 @@ button {
   width: 100%;
   min-height: 100vh;
   max-height: 100%;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(3.3%, #050A18), color-stop(105.69%, #20315E));
-  background: linear-gradient(180deg, #050A18 3.3%, #20315E 105.69%);
+  background: linear-gradient(139.54deg, #091022 17.04%, #111d3d 48.16%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   overflow: hidden;
+}
+
+.about__article {
+  margin-left: 2em;
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__article--1 {
+  width: 50%;
+}
+
+.about__article--2 {
+  margin-left: 1em;
+  width: 50%;
+}
+
+.about__article--2 .paragraph {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 70%;
 }
 
 @font-face {

@@ -5,10 +5,9 @@ import circlepurple from '../../Resources/Images/circlepurple.png';
 import elipse from '../../Resources/Images/elipse1.png';
 import mainelipse from '../../Resources/Images/elipsebaner.png';
 import elipse2 from '../../Resources/Images/elipse2.png';
-
 import blobs from '../../Resources/Images/blobsbg.png';
 import { Socials } from '../Socials/Socials';
-
+import { ParallaxProvider, ParallaxBanner, Parallax } from "react-scroll-parallax";
 
 interface Banner {
 
@@ -18,12 +17,23 @@ export const Banner: React.FC<Banner> = () => {
 
     return (
         <section className='banner'>
-            <img className='grain' src={grain}></img>
+          
+
+
+
+
             <article className='banner__article--1'>
-                <img className='circle' src={circlepurple}></img>
-                <img className='elipse elipse--1' src={mainelipse}></img>
+                <Parallax className='circle' speed={-10}>
+                    <img className='circle' src={circlepurple}></img>
+                </Parallax>
+                <Parallax className='elipse elipse--1' speed={-10}>
+                    <img className='elipse elipse--1' src={mainelipse}></img>
+                </Parallax>
+
                 <img className='elipse elipse--2' src={elipse}></img>
                 <img className='elipse elipse--3' src={elipse2}></img>
+
+
 
                 {/* <ol className='bloborderlist'>
                     <li className="bloblist">
@@ -84,8 +94,10 @@ export const Banner: React.FC<Banner> = () => {
                     </li>
                 </ol> */}
 
-                {/* <img className='blobsbg' src={blobs}></img> */}
+
             </article>
+            {/* <img className='grain' src={grain}></img> */}
+
             <article className='banner__article--2'>
                 {/* <img className='circle' src={circle}></img>
                 <img className='circleblur' src={circle}></img> */}
@@ -96,6 +108,7 @@ export const Banner: React.FC<Banner> = () => {
                 </article>
 
             </article>
+            <div className='grain'></div>
 
         </section>
     );

@@ -11,7 +11,7 @@ import { Banner } from '../Banner/Banner';
 import { Header } from '../Header/Header';
 import { Work } from '../Work/Work';
 import { Contact } from '../Contact/Contact';
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax,ParallaxProvider } from 'react-scroll-parallax';
 
 
 
@@ -28,7 +28,10 @@ export const Routers: React.FC<Routes> = () => {
   return (
     <section className='routes'>
       <Header />
+     
+                
       <Banner />
+     
       <About />
       <Work />
       <Contact />
