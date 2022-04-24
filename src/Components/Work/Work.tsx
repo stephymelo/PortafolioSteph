@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { WorkElemObj } from '../../Types/WorkElemObj';
 import WorkElem from './WorkElem/WorkElem';
-import flowerBehance from './../../Resources/Images/flowerbgehance.png';
+import flowerBehance from './../../Resources/Images/flowerbehance.png';
 import hulubehance from './../../Resources/Images/hulubehance.png';
 import gameitbehance from './../../Resources/Images/gameit.png';
 import closebehance from './../../Resources/Images/closebehance.png';
