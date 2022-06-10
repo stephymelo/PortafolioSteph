@@ -15,8 +15,8 @@ const WorkElem: React.FC<WorkElemProps> = ({ id, title, tags, tags2, description
         <li className='workElem__tag'>{tags2}</li>
       </ol>
       <h2 className='workElem__title'>{title}</h2>
-      <a href={link} target="_blank">
-        <img className='workElem__image' src={image}></img>
+      <a className='workElem__a' href={link} target="_blank">
+        <img className='image' src={image}></img>
         
       </a>
       <p className='workElem__description'>{description}</p>

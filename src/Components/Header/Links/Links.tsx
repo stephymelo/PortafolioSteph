@@ -15,7 +15,7 @@ export const Links: React.FC<Links> = () => {
                         smooth={true}
                         duration={300}
                         className='link'
-                        activeClass='some-active-class'><span>Home</span></Link>
+                        activeClass='some-active-class'><span className='spanLink'>Home</span></Link>
                 </li>
                 <li className='linksmenu__link'>
                     <Link to="about"
@@ -23,7 +23,7 @@ export const Links: React.FC<Links> = () => {
                         smooth={true}
                         duration={300}
                         className='link'
-                        activeClass='some-active-class'><span>About</span></Link>
+                        activeClass='some-active-class'><span className='spanLink'>About</span></Link>
                 </li>
                 <li className='linksmenu__link'>
                     <Link to="work"
@@ -31,7 +31,7 @@ export const Links: React.FC<Links> = () => {
                         smooth={true}
                         duration={400}
                         className='link'
-                        activeClass='some-active-class'><span>Work</span></Link>
+                        activeClass='some-active-class'><span className='spanLink'>Work</span></Link>
                 </li>
                 <li className='linksmenu__link'>
                     <Link to="contact"
@@ -39,7 +39,7 @@ export const Links: React.FC<Links> = () => {
                         smooth={true}
                         duration={300}
                         className='link'
-                        activeClass='some-active-class'><span>Contact</span></Link>
+                        activeClass='some-active-class'><span className='spanLink'>Contact</span></Link>
                 </li>
             </ul>
 

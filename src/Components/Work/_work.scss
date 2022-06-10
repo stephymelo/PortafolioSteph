@@ -1,24 +1,74 @@
-.work{
-    width: 100%;
+.work {
     min-height: 100vh;
     max-height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../../Resources/Images/grain.png");
-    background: linear-gradient(111.13deg, #091022 -16.05%, #111D3D 28.09%);
-    
+    background: linear-gradient(111.13deg, #091022 -16.05%, #111d3d 28.09%);
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    
-   
-    &__article{
+
+    &__ellipses{
+        z-index: 1;
+        
+        
+
+        .ellip{
+            position: absolute;
+            animation: float 10s ease-in-out 2s infinite;
        
+            &--1{
+                top:100px;
+                left:60px;
+               
+    
+            }
+            &--2{
+                top:600px;
+                left:200px;
+    
+            }
+            &--3{
+                bottom:350px;
+                right:80px;
+    
+            }
+
+        }
+        
+    
+
+       
+        
+        
+    }
+
+    &__article {
+        z-index: 10;
         width: 100%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        margin-left:10em;
-        margin-top:5em;
+        margin-top: 5em;
+        margin-left:16em;
+        margin-bottom:5em;
+    }
+
+   
+}
+
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(16px);
+    }
+    100% {
+        transform: translatey(0px);
     }
 }

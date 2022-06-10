@@ -1,10 +1,32 @@
-.linksmenu{
+.linksmenu {
     // display: flex;
     // flex-direction: row;
     text-align: right;
 
-    &__link{
-        margin-top:0.4em;
+    &__link {
+        margin-top: 0.4em;
         cursor: pointer;
+
+        .link {
+            position: relative;
+            color: white;
+
+            ::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 1px;
+                bottom: 0;
+                right: 0;
+                background-color: $secondary;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+            :hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
     }
 }

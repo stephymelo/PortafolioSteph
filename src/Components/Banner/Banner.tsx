@@ -17,21 +17,24 @@ export const Banner: React.FC<Banner> = () => {
 
     return (
         <section className='banner'>
-          
+
 
 
 
 
             <article className='banner__article--1'>
-                <Parallax className='circle' speed={-10}>
-                    <img className='circle' src={circlepurple}></img>
-                </Parallax>
                 <Parallax className='elipse elipse--1' speed={-10}>
                     <img className='elipse elipse--1' src={mainelipse}></img>
                 </Parallax>
-
                 <img className='elipse elipse--2' src={elipse}></img>
                 <img className='elipse elipse--3' src={elipse2}></img>
+
+
+
+
+                <Parallax className='circle' speed={-10}>
+                    <img className='circle' src={circlepurple}></img>
+                </Parallax>
 
 
 

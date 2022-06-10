@@ -7,6 +7,11 @@ import gameitbehance from './../../Resources/Images/gameit.png';
 import closebehance from './../../Resources/Images/closebehance.png';
 import durexbehance from './../../Resources/Images/durexbehance.png';
 import eficaciabehance from './../../Resources/Images/eficaciabehance.png';
+import ellipse1 from './../../Resources/Images/Ellipse 145.png';
+import ellipse2 from './../../Resources/Images/Ellipse 146.png';
+import ellipse3 from './../../Resources/Images/Ellipse 147.png';
+
+
 
 
 
@@ -76,6 +81,12 @@ export const Work: React.FC<Work> = () => {
     return (
 
         <section className='work'>
+            <div className='work__ellipses'>
+                <img className='ellip ellip--1' src={ellipse1}></img>
+                <img className='ellip ellip--2' src={ellipse2}></img>
+                <img className='ellip ellip--3' src={ellipse3}></img>
+
+            </div>
             <article className='work__article'>
                 {
                     workElems.map((elem) => {
@@ -88,14 +99,12 @@ export const Work: React.FC<Work> = () => {
                             description={elem.description}
                             image={elem.image}
                             link={elem.link}
-
-
                         />
                     })
-
-
                 }
             </article>
+
+
         </section>
 
     );

@@ -1,6 +1,6 @@
 .banner {
     width: 100%;
-    min-height: 110vh;
+    min-height: 120vh;
     max-height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -35,12 +35,14 @@
             }
             .elipse {
                 position: absolute;
-                top: 0em;
+               
+                
 
                 &--1 {
                     left: 1em;
                     mix-blend-mode: hard-light;
                     width: 98%;
+                    // animation: float 10s ease-in-out 2s infinite;
                 }
 
                 &--2 {
@@ -78,14 +80,14 @@
 
 @keyframes float {
     0% {
-        transform: translatey(0px);
+        transform: translatey(30px);
     }
 
     50% {
-        transform: translatey(-15px);
+        transform: translatey(34px);
     }
     100% {
-        transform: translatey(0px);
+        transform: translatey(30px);
     }
 }
 

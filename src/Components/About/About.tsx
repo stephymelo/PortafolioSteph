@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import stephpapa from '../../Resources/Images/meSelfie.png';
+import stephpapa from '../../Resources/Images/photoedit.png';
 
 
 interface About {
@@ -15,13 +15,13 @@ export const About: React.FC<About> = () => {
     return (
         <section className='about'>
             <article className='about__article'>
-
                 <article className='about__article--1'>
-                    <Parallax translateX={[-50, 10]} speed={10}>
-                        {/* <h2>About</h2> */}
+                    <Parallax translateX={[-60, 5]} speed={10}>
+                        <h2 className='title'>About</h2>
                     </Parallax>
-                    <img className='imageselfie' src={stephpapa}/>
-                  
+
+                    <img className='imageselfie' src={stephpapa} />
+
                 </article>
 
 
