@@ -712,6 +712,7 @@ button:hover {
   display: flex;
   position: relative;
   overflow: hidden;
+  z-index: 10;
 }
 
 .contact__article {
