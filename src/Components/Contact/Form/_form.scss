@@ -1,26 +1,19 @@
-.contactForm{
-   
-
-    &__form{
-        &--1{
-            margin-top:2em;
+.contactForm {
+    &__form {
+        &--1 {
+            margin-top: 4em;
             display: flex;
-            
-            .input{
-                margin-right:2em;
+
+            .input {
+                margin-right: 2em;
             }
         }
-        &--2{
-            margin-top:2em;
+        &--2 {
+            margin-top: 2em;
 
-
-            .contactformBtn{
-               
-                margin-top:2em;
+            .contactformBtn {
+                margin-top: 2em;
             }
-
-
-
         }
     }
 }

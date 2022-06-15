@@ -8,28 +8,89 @@
     display: flex;
     position: relative;
     overflow: hidden;
+    .circleseflie {
+        bottom: 0;
+        left: 0;
 
+        position: absolute;
+    }
     &__article {
-        margin-left: 2em;
-        margin-top: 5em;
+        margin-left: 5em;
+        margin-top: 8em;
         display: flex;
+        z-index: 5;
+
         &--1 {
-            width: 80%;
-            .title {
+            margin-top: 5em;
+            width: 20%;
+            .ellipseTitle {
+                top: -2em;
+                position: absolute;
             }
 
+            .title {
+                font-size: 25px;
+            }
+        }
+        &--2 {
+            width: 70%;
+            margin-top: 9em;
+
             .imageselfie {
-                width: 100%;
+                width: 70%;
             }
         }
 
-        &--2 {
-            margin-left: 1em;
-            width: 50%;
-            .paragraph {
-                margin-top: 2em;
-                margin-bottom: 2em;
-                width: 70%;
+        &--3 {
+            margin-left: 0em;
+            width: 80%;
+            margin-right: 8em;
+            margin-top: 10em;
+
+            .paragraph--containers {
+                border-radius: 32px;
+                background-color: rgba(50, 69, 124, 0.29);
+                height: fit-content;
+                width: fit-content;
+                padding-left: 2em;
+                padding-right: 2em;
+                padding-top: 1em;
+                padding-bottom: 1em;
+
+                .paragraph {
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                    width: 100%;
+                }
+            }
+
+            .ellipseParagraph {
+                top:30em;
+                right:4em;
+                position:absolute;
+            }
+            .linkparagraph {
+                text-shadow: 0px 0px 5px rgba(188, 205, 245, 0);
+                transition-delay: calc((var(--n) - 1) * 0.1s);
+                .iconLink {
+                    margin-left: 1em;
+                    margin-top: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    .paragraphLink {
+                        font-size: 14px;
+                    }
+                }
+
+                :hover {
+                    transition: all 0.2s ease-in-out;
+                    mix-blend-mode: hard-light;
+                    filter: drop-shadow(0px 0px 2px);
+                }
+                &::after {
+                    transition: all 0.2s ease-in-out;
+                    text-shadow: 0px 0px 5px rgba(188, 205, 245, 0);
+                }
             }
         }
     }

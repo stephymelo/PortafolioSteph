@@ -19,7 +19,7 @@ export const Contact: React.FC<Contact> = () => {
                 </Parallax>
 
                 <article className='contact__article--1'>
-                    <h1>Let's get in touch</h1>
+                    <h1 className='contact--title'>Let's get in touch</h1>
                     <Form></Form>
                 </article>
                 <article className='contact__article--2'>

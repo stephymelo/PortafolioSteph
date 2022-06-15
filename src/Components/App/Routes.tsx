@@ -12,6 +12,7 @@ import { Header } from '../Header/Header';
 import { Work } from '../Work/Work';
 import { Contact } from '../Contact/Contact';
 import { Parallax,ParallaxProvider } from 'react-scroll-parallax';
+import grain from '../../Resources/Images/grain.png';
 
 
 
@@ -27,6 +28,7 @@ export const Routers: React.FC<Routes> = () => {
 
   return (
     <section className='routes'>
+      <img className="imagegrain" src={grain}></img>
       <Header />
      
                 

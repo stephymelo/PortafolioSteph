@@ -20,7 +20,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url("../../Resources/Images/grain.png");
-        animation: grain 8s steps(10) infinite;
+        // animation: grain 8s steps(10) infinite;
     }
 
     &__article {
@@ -32,6 +32,7 @@
                 left: 10em;
                 width: 30%;
                 position: absolute;
+                // animation: floaty 10s ease-in-out 2s infinite;
             }
             .elipse {
                 position: absolute;
@@ -78,16 +79,16 @@
     }
 }
 
-@keyframes float {
+@keyframes floaty {
     0% {
-        transform: translatey(30px);
+        transform: translatey(0px);
     }
 
     50% {
-        transform: translatey(34px);
+        transform: translatey(5px);
     }
     100% {
-        transform: translatey(30px);
+        transform: translatey(0px);
     }
 }
 

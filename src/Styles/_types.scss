@@ -6,10 +6,7 @@ h1 {
     letter-spacing: 0.28em;
 }
 
-button{
-    
-    
-
+button {
 }
 
 h2 {
@@ -22,9 +19,7 @@ h2 {
 
 h3,
 a,
-span,
-textarea,
-input {
+span {
     font-size: 14px;
     color: #9fb2dd;
     font-family: "Gotham", sans-serif;
@@ -32,18 +27,33 @@ input {
     letter-spacing: 0.28em;
 }
 
-p, li{
+textarea,
+input {
+    font-size: 12px;
     color: #9fb2dd;
+    font-family: "Gotham", sans-serif;
     font-weight: 200;
+    letter-spacing: 0.28em;
+}
+
+li {
+    color: #9fb2dd;
+    font-weight: 300;
+    font-family: "Gotham", sans-serif;
+    letter-spacing: 0.1em;
+}
+p {
+    color: #9fb2dd;
+    font-weight: 300;
+    line-height: 20px;
     font-family: "Gotham", sans-serif;
     letter-spacing: 0.1em;
 }
 
-h4{
+h4 {
     font-size: 14px;
     color: #9fb2dd;
     font-family: "Gotham", sans-serif;
     font-weight: 200;
     letter-spacing: 0.28em;
-
 }

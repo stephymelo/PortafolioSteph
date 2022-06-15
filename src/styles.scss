@@ -37,4 +37,14 @@
     margin-top: 60px;
     
   }
+
+  .imagegrain{
+      background-image: url(./Resources/Images/grain.png) ;
+      background-size: cover;
+      opacity: 0.2;
+      width:100%;
+      background-repeat: repeat;
+      position: fixed;
+      z-index: 1;
+  }
   

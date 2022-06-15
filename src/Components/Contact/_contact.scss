@@ -5,14 +5,14 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background: linear-gradient(148.24deg, #2349b0 -20.34%, #050a19 59.06%);
+    background: linear-gradient(180.24deg, #1C257B 10.34%, #050a19 70.06%);
     display: flex;
     position: relative;
     overflow: hidden;
 
     &__article {
         margin-left: 4em;
-        margin-top: 10em;
+        margin-top: 16em;
         display: flex;
 
         .circlecontact {
@@ -30,14 +30,19 @@
 
         &--1 {
             margin-left: 5em;
+
+            .contact--title{
+
+
+            }
         }
 
         &--2 {
             z-index: 10;
-            margin-left: 15em;
+            margin-left: 21em;
 
             .social {
-                margin-top: 9em;
+                margin-top: 12em;
                 &--1 {
                     font-weight: 400;
                     font-size: 16px;
@@ -59,7 +64,7 @@
     }
 
     50% {
-        transform: translatey(16px);
+        transform: translatey(20px);
     }
     100% {
         transform: translatey(0px);

@@ -41,11 +41,11 @@ textarea {
 
 textarea:focus,
 input:focus {
-    color: white;
+    color: #b1c7ff;
     outline: none !important;
 }
 ::placeholder {
-    color: white;
+    color: #b1c7ff;
 }
 
 span {
@@ -57,7 +57,7 @@ span {
 
 button {
     font-size: 14px;
-    color: black;
+    color: #b1c7ff;
     font-family: "Gotham", sans-serif;
     font-weight: 300;
     text-align: center;
@@ -68,8 +68,10 @@ button {
     padding-bottom: 0.5em;
     padding-left: 2em;
     padding-right: 2.1em;
-    border-style: none;
-    background-color: #cddcff;
+    border-style: solid;
+    border-color: #b1c7ff;
+    border-width: 1px;
+    background-color: transparent;
     transition: 0.5s;
 
     // &:hover::after {
@@ -81,6 +83,7 @@ button {
     // }
 
     &:hover {
+        border-color: #3156ef;
         background-color: #3156ef;
         color: white;
         opacity: 1;

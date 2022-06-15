@@ -3,7 +3,7 @@ import circle from '../../Resources/Images/bannerCircle.png';
 import grain from '../../Resources/Images/grain.png';
 import circlepurple from '../../Resources/Images/circlepurple.png';
 import elipse from '../../Resources/Images/elipse1.png';
-import mainelipse from '../../Resources/Images/elipsebaner.png';
+import mainelipse from '../../Resources/Images/ellipseBannerNoblur.png';
 import elipse2 from '../../Resources/Images/elipse2.png';
 import blobs from '../../Resources/Images/blobsbg.png';
 import { Socials } from '../Socials/Socials';
