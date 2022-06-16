@@ -417,28 +417,17 @@ button:hover {
   overflow: hidden;
 }
 
-.banner .grain {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../../Resources/Images/grain.png");
-}
-
 .banner__article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.banner__article--1 .circle {
-  top: 5em;
-  left: 10em;
+.banner__article--1 .circleheader {
   width: 30%;
   position: absolute;
+  top: 10em;
+  left: 20em;
 }
 
 .banner__article--1 .elipse {
@@ -483,31 +472,31 @@ button:hover {
 
 @-webkit-keyframes floaty {
   0% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
+    -webkit-transform: translatey(30px);
+            transform: translatey(30px);
   }
   50% {
-    -webkit-transform: translatey(5px);
-            transform: translatey(5px);
-  }
-  100% {
     -webkit-transform: translatey(0px);
             transform: translatey(0px);
+  }
+  100% {
+    -webkit-transform: translatey(30px);
+            transform: translatey(30px);
   }
 }
 
 @keyframes floaty {
   0% {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
+    -webkit-transform: translatey(30px);
+            transform: translatey(30px);
   }
   50% {
-    -webkit-transform: translatey(5px);
-            transform: translatey(5px);
-  }
-  100% {
     -webkit-transform: translatey(0px);
             transform: translatey(0px);
+  }
+  100% {
+    -webkit-transform: translatey(30px);
+            transform: translatey(30px);
   }
 }
 
@@ -712,7 +701,6 @@ button:hover {
   display: flex;
   position: relative;
   overflow: hidden;
-  z-index: 10;
 }
 
 .contact__article {
@@ -731,21 +719,23 @@ button:hover {
 }
 
 .contact__article .circlecontact__img {
-  width: 800px;
+  width: 60em;
   -webkit-animation: float 10s ease-in-out 2s infinite;
           animation: float 10s ease-in-out 2s infinite;
 }
 
 .contact__article--1 {
+  z-index: 10;
   margin-left: 5em;
 }
 
 .contact__article--2 {
   z-index: 10;
-  margin-left: 21em;
 }
 
 .contact__article--2 .social {
+  position: absolute;
+  right: 15em;
   margin-top: 12em;
 }
 
@@ -806,7 +796,7 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  left: 2em;
+  width: 100%;
   top: 2em;
 }
 
@@ -816,14 +806,16 @@ button:hover {
 }
 
 .header__article--1 .logo {
-  width: 15%;
+  margin-left: 1em;
+  width: 5%;
   height: 100%;
 }
 
 .header__article--2 {
   position: relative;
   width: 50%;
-  margin-left: 58em;
+  margin-right: 3em;
+  right: 0px;
 }
 
 .header .menu {
@@ -929,6 +921,8 @@ button:hover {
   bottom: 0;
   left: 0;
   position: absolute;
+  -webkit-animation: float 10s ease-in-out 1s infinite;
+          animation: float 10s ease-in-out 1s infinite;
 }
 
 .about__article {

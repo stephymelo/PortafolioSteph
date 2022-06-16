@@ -9,7 +9,7 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    z-index:10;
+ 
 
     &__article {
         margin-left: 4em;
@@ -24,12 +24,13 @@
             
 
             &__img {
-                width:800px;
+                width:60em;
                 animation: float 10s ease-in-out 2s infinite;
             }
         }
 
         &--1 {
+            z-index:10;
             margin-left: 5em;
 
             .contact--title{
@@ -40,9 +41,12 @@
 
         &--2 {
             z-index: 10;
-            margin-left: 21em;
+            // margin-left: 21em;
 
             .social {
+                position: absolute;
+                right:15em;
+                
                 margin-top: 12em;
                 &--1 {
                     font-weight: 400;

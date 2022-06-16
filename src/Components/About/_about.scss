@@ -11,8 +11,8 @@
     .circleseflie {
         bottom: 0;
         left: 0;
-
         position: absolute;
+        animation: float 10s ease-in-out 1s infinite;
     }
     &__article {
         margin-left: 5em;

@@ -11,28 +11,19 @@
     position: relative;
     overflow: hidden;
 
-    .grain {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: 0.5;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("../../Resources/Images/grain.png");
-        // animation: grain 8s steps(10) infinite;
-    }
+   
 
     &__article {
         display: flex;
 
         &--1 {
-            .circle {
-                top: 5em;
-                left: 10em;
+            .circleheader {
+               
                 width: 30%;
                 position: absolute;
-                // animation: floaty 10s ease-in-out 2s infinite;
+                top:10em;
+                left:20em;
+                // animation: floaty 3s ease-in-out 1s infinite;
             }
             .elipse {
                 position: absolute;
@@ -81,14 +72,14 @@
 
 @keyframes floaty {
     0% {
-        transform: translatey(0px);
+        transform: translatey(30px);
     }
 
     50% {
-        transform: translatey(5px);
+        transform: translatey(0px);
     }
     100% {
-        transform: translatey(0px);
+        transform: translatey(30px);
     }
 }
 
