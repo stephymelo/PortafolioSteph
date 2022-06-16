@@ -13,9 +13,6 @@
 
     &__ellipses{
         z-index: 1;
-        
-        
-
         .ellip{
             position: absolute;
             animation: float 10s ease-in-out 2s infinite;
@@ -38,12 +35,6 @@
             }
 
         }
-        
-    
-
-       
-        
-        
     }
 
     &__article {
@@ -55,8 +46,60 @@
         margin-left:16em;
         margin-bottom:5em;
     }
+}
 
-   
+@media screen and (max-width: 700px) {
+    .work {
+        min-height: 100vh;
+        max-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../../Resources/Images/grain.png");
+        background: linear-gradient(359.86deg, #1C257B 10.75%, #111d3d 93.78%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    
+        &__ellipses{
+            z-index: 1;
+            .ellip{
+                position: absolute;
+                animation: float 10s ease-in-out 2s infinite;
+           
+                &--1{
+                    top:100px;
+                    left:0px;
+                   
+        
+                }
+                &--2{
+                    top:600px;
+                    left:0px;
+        
+                }
+                &--3{
+                    bottom:350px;
+                    right:00px;
+        
+                }
+    
+            }
+        }
+    
+        &__article {
+            z-index: 10;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 5em;
+            margin-left:0em;
+            margin-bottom:5em;
+        }
+    }
+
+
 }
 
 

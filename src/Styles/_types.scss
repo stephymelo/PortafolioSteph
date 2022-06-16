@@ -57,3 +57,68 @@ h4 {
     font-weight: 200;
     letter-spacing: 0.28em;
 }
+
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 24px;
+        color: $secondary;
+        font-family: "Gotham", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.28em;
+    }
+    
+    button {
+    }
+    
+    h2 {
+        font-size: 16px;
+        color: #9fb2dd;
+        font-family: "Gotham", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.28em;
+    }
+    
+    h3,
+    a,
+    span {
+        font-size: 12px;
+        color: #9fb2dd;
+        font-family: "Gotham", sans-serif;
+        font-weight: 200;
+        letter-spacing: 0.28em;
+    }
+    
+    textarea,
+    input {
+        font-size: 12px;
+        color: #9fb2dd;
+        font-family: "Gotham", sans-serif;
+        font-weight: 200;
+        letter-spacing: 0.28em;
+    }
+    
+    li {
+        color: #9fb2dd;
+        font-weight: 300;
+        font-family: "Gotham", sans-serif;
+        letter-spacing: 0.1em;
+    }
+    p {
+        color: #9fb2dd;
+        font-weight: 300;
+        line-height: 20px;
+        font-size:12px;
+        font-family: "Gotham", sans-serif;
+        letter-spacing: 0.1em;
+    }
+    
+    h4 {
+        font-size: 14px;
+        color: #9fb2dd;
+        font-family: "Gotham", sans-serif;
+        font-weight: 200;
+        letter-spacing: 0.28em;
+    }
+
+}

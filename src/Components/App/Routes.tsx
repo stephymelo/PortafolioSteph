@@ -28,10 +28,8 @@ export const Routers: React.FC<Routes> = () => {
 
   return (
     <section className='routes'>
-      <img className="imagegrain" src={grain}></img>
-      <Header />
-     
-                
+      {/* <img className="imagegrain" src={grain}></img> */}
+      <Header />      
       <Banner />
      
       <About />

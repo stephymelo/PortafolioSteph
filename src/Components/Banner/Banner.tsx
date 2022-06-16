@@ -1,7 +1,7 @@
 import * as React from 'react';
 import circle from '../../Resources/Images/bannerCircle.png';
 import grain from '../../Resources/Images/grain.png';
-import circlepurple from '../../Resources/Images/circlepurple.png';
+import circlepurple from '../../Resources/Images/circleBanner.png';
 import elipse from '../../Resources/Images/elipse1.png';
 import mainelipse from '../../Resources/Images/ellipseBannerNoblur.png';
 import elipse2 from '../../Resources/Images/elipse2.png';
@@ -30,10 +30,12 @@ export const Banner: React.FC<Banner> = () => {
                 </Parallax>
                 <Parallax className='circleheader' speed={-20}>
                     <img className='circle2' src={circlepurple}></img>
+              
+
                 </Parallax>
             </article>
             <article className='banner__article--2'>
-              
+
                 <article className='info'>
                     <h1 className='title'>Hi,I'm Stephanie</h1>
                     <h2 className='subtitle'>UX Designer and Frontend</h2>
@@ -41,7 +43,7 @@ export const Banner: React.FC<Banner> = () => {
                 </article>
 
             </article>
-          
+
 
         </section>
     );

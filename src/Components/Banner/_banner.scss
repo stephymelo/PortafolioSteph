@@ -24,8 +24,12 @@
                 top:10em;
                 left:20em;
                 // animation: floaty 3s ease-in-out 1s infinite;
+                .circle2{
+                    width:15em;
+                }
             }
             .elipse {
+              
                 position: absolute;
                
                 
@@ -70,6 +74,100 @@
     }
 }
 
+
+
+
+@media screen and (max-width: 700px) {
+    .banner {
+        width: 100%;
+        min-height: 100vh;
+        max-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../../Resources/Images/grain.png");
+        background: linear-gradient(210.58deg, #091022 19.98%, #111d3d 56.3%, #091022 87.94%) ;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    
+       
+    
+        &__article {
+            display: flex;
+            flex-direction: column;
+    
+            &--1 {
+                width: 10%;
+                .circleheader {
+                    width: 50%;
+                    position: absolute;
+                    top:-4em;
+                    left:-8em;
+
+                    .circle2{
+                        width:50em;
+                    }
+                    // animation: floaty 3s ease-in-out 1s infinite;
+                }
+                .elipse {
+                   display: none;
+                    position: absolute;
+                   
+                    
+    
+                    &--1 {
+                      
+                        left: 1em;
+                        mix-blend-mode: hard-light;
+                        width: 98%;
+                        // animation: float 10s ease-in-out 2s infinite;
+                    }
+    
+                    &--2 {
+
+
+                        width: 100%;
+                        top: 8em;
+                        left: 2em;
+                    }
+    
+                    &--3 {
+                        width: 100%;
+                        top: 8em;
+                        left: 1em;
+                    }
+                }
+            }
+    
+            &--2 {
+                position: relative;
+                width: 80%;
+    
+                .info {
+                    position: absolute;
+                    z-index: 2;
+                    margin-top:7em;
+                    top: 7em;
+                    margin-left: 0em;
+                    .title {
+                        inline-size: 230px;
+                        overflow-wrap: break-word;
+                        text-shadow: 0px 0px 10px rgba(188, 205, 245, 0.459);
+                    }
+                    .subtitle {
+                        margin-top: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+    
+
+
+}
+
+
 @keyframes floaty {
     0% {
         transform: translatey(30px);
@@ -80,85 +178,5 @@
     }
     100% {
         transform: translatey(30px);
-    }
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes blobs {
-    0% {
-        border-radius: 26% 74% 61% 39% / 54% 67% 33% 46%;
-    }
-    10% {
-        border-radius: 74% 26% 47% 53% / 68% 46% 54% 32%;
-    }
-    20% {
-        border-radius: 48% 52% 30% 70% / 27% 37% 63% 73%;
-    }
-    30% {
-        border-radius: 73% 27% 57% 43% / 28% 67% 33% 72%;
-    }
-    40% {
-        border-radius: 63% 37% 56% 44% / 25% 28% 72% 75%;
-    }
-    50% {
-        border-radius: 39% 61% 70% 30% / 61% 29% 71% 39%;
-    }
-    60% {
-        border-radius: 27% 73% 29% 71% / 73% 51% 49% 27%;
-    }
-    70% {
-        border-radius: 39% 61% 65% 35% / 74% 65% 35% 26%;
-    }
-    80% {
-        border-radius: 55% 45% 37% 63% / 38% 30% 70% 62%;
-    }
-    90% {
-        border-radius: 25% 75% 70% 30% / 39% 50% 50% 61%;
-    }
-    100% {
-        border-radius: 66% 34% 33% 67% / 65% 73% 27% 35%;
-    }
-}
-@keyframes grain {
-    0% {
-        transform: translate(0, 0);
-    }
-    10% {
-        transform: translate(-5%, -5%);
-    }
-    20% {
-        transform: translate(-10%, 5%);
-    }
-    30% {
-        transform: translate(5%, -10%);
-    }
-    40% {
-        transform: translate(-5%, 15%);
-    }
-    50% {
-        transform: translate(-10%, 5%);
-    }
-    60% {
-        transform: translate(15%, 0);
-    }
-    70% {
-        transform: translate(0, 10%);
-    }
-    80% {
-        transform: translate(-15%, 0);
-    }
-    90% {
-        transform: translate(10%, 5%);
-    }
-    100% {
-        transform: translate(5%, 0);
     }
 }
