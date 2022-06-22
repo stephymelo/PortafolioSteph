@@ -137,7 +137,7 @@
                 }
             }
             &--2 {
-                width: 80%;
+                width: 90%;
                 margin-top: 2em;
     
                 .imageselfie {
@@ -147,8 +147,9 @@
     
             &--3 {
                 margin-left: 0em;
-                width: 80%;
-                margin-right: 2em;
+                width: 90%;
+                align-items: center;
+                margin-right: 0em;
                 margin-top: 2em;
     
                 .paragraph--containers {
@@ -169,6 +170,7 @@
                 }
     
                 .ellipseParagraph {
+                    display:none;
                     top:30em;
                     right:4em;
                     position:absolute;

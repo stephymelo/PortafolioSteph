@@ -27,7 +27,10 @@ export const Contact: React.FC<Contact> = () => {
                         <h3 className='social--1'>Stephanie Melo</h3>
                         <h3 className='social--2'>stephymelo99@gmail.com</h3>
                         <h3 className='social--3'>+57 301-2756755</h3>
-                        <Socials></Socials>
+                        <div className='social--4'>
+                            <Socials></Socials>
+                        </div>
+
                     </article>
                 </article>
 

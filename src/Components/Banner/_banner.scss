@@ -96,14 +96,15 @@
         &__article {
             display: flex;
             flex-direction: column;
+            
     
             &--1 {
                 width: 10%;
                 .circleheader {
                     width: 50%;
                     position: absolute;
-                    top:-4em;
-                    left:-8em;
+                    top:-5em;
+                    left:-18.5em;
 
                     .circle2{
                         width:50em;
@@ -112,7 +113,7 @@
                 }
                 .elipse {
                    display: none;
-                    position: absolute;
+                   position: absolute;
                    
                     
     
@@ -150,13 +151,16 @@
                     margin-top:7em;
                     top: 7em;
                     margin-left: 0em;
+                    // text-align: center;
                     .title {
-                        inline-size: 230px;
-                        overflow-wrap: break-word;
+                        // inline-size: 230px;
+                        // overflow-wrap: break-word;
                         text-shadow: 0px 0px 10px rgba(188, 205, 245, 0.459);
                     }
                     .subtitle {
-                        margin-top: 1.3em;
+                        line-height: 1.5em;
+                        letter-spacing: 0.4em;
+                        margin-top: 2.5em;
                     }
                 }
             }

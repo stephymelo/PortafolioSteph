@@ -63,6 +63,84 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    .contact {
+        width: 100%;
+        min-height: 110vh;
+        max-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background: linear-gradient(180.24deg, #1C257B 10.34%, #050a19 70.06%);
+        display: flex;
+        position: relative;
+        overflow: hidden;
+     
+    
+        &__article {
+            width: 100%;
+            margin-left: 0em;
+            margin-top: 10em;
+            display: flex;
+    
+            .circlecontact {
+                z-index: 1;
+                position: absolute;
+                right: 0;
+                margin-right: -2em;
+                
+    
+                &__img {
+                    width:60em;
+                    animation: float 10s ease-in-out 2s infinite;
+                }
+            }
+    
+            &--1 {
+                z-index:10;
+                margin-left: 1em;
+                padding-right: 3em;
+                width: 100%;
+    
+                .contact--title{
+    
+    
+                }
+            }
+    
+            &--2 {
+                z-index: 10;
+                // margin-left: 21em;
+    
+                .social {
+                    position: absolute;
+                    right:0em;
+                    bottom:0em;
+                    
+                    text-align: center;
+                    top: 35em;
+                    padding-bottom:5em;
+                    &--1 {
+                       
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                    &--2 {
+                        margin-top: 1.2em;
+                    }
+                    &--3 {
+                        margin-top: 1.2em;
+                    }
+                    &--4{
+                        margin-top:-2em;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 @keyframes float {
     0% {
         transform: translatey(0px);
