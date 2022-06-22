@@ -591,7 +591,7 @@ button:hover {
 
 .banner {
   width: 100%;
-  min-height: 120vh;
+  min-height: 130vh;
   max-height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -836,7 +836,7 @@ button:hover {
 @media screen and (max-width: 700px) {
   .contact {
     width: 100%;
-    min-height: 110vh;
+    min-height: 130vh;
     max-height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -879,9 +879,8 @@ button:hover {
   .contact__article--2 .social {
     position: absolute;
     right: 0em;
-    bottom: 0em;
+    bottom: 8em;
     text-align: center;
-    top: 35em;
     padding-bottom: 5em;
   }
   .contact__article--2 .social--1 {
